@@ -1,10 +1,10 @@
 import { Button, Container } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
-
+import './navBar.css'
 function NavBar() {
   return (
-    <>
-      <div>
+    <div className='nav-bar-main'>
+      <div className='nav-top'>
         <div id='logo'>
           <div>logo</div>
           <div>mic</div>
@@ -39,9 +39,10 @@ function NavBar() {
             <Nav.Link eventKey="link-8">Tools</Nav.Link>
           </Nav.Item>
         </Nav>
-        <Button size='sm'>Donate now</Button>
+        <Button className='nav-bar-btn' size='sm'>Donate now</Button>
       </div>
-    </>
+      
+    </div>
   );
 }
 
